@@ -1,56 +1,50 @@
 # E-commerce Microservices Application
 
-This project is a microservices-based e-commerce application built using Java, Spring Boot, MySQL, Swagger UI for documentation, JPA, and Maven. The application consists of five main services: API Gateway, Product Service, Cart Service, Inventory Service, and Order Service.
+## Overview
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
-- [API Documentation](#api-documentation)
-- [Usage](#usage)
-- [License](#license)
+The E-commerce Microservices Application is a web application designed to facilitate online shopping. It allows users to manage products, carts, orders, and inventory through a microservices architecture. The system is built using Spring Boot for the backend and MySQL as the database.
 
 ## Features
 
 ### Product Service
-- **Create a product**: `POST /create`
-- **Get all products**: `GET /getAllProducts`
-- **Get product by ID**: `GET /getById/{productId}`
-- **Update product**: `PUT /updateById/{productId}`
-- **Delete product**: `DELETE /deleteById/{productId}`
-- **Group products by category**: `GET /groupByCategory`
-- **Get products by category**: `GET /getProductsByCategory/{category}`
-- **Search products by name**: `GET /searchByName/{name}`
-- **Search products by category**: `GET /searchByCategory/{category}`
+- [ ] **Create a Product**: Admin can add new products to the catalog.
+- [ ] **Get All Products**: Users can view all available products.
+- [ ] **Get Product by ID**: Users can retrieve details of a specific product using its ID.
+- [ ] **Update Product**: Admin can update the details of existing products.
+- [ ] **Delete Product**: Admin can remove products from the catalog.
+- [ ] **Group Products by Category**: Users can view products grouped by their category.
+- [ ] **Get Products by Category**: Users can filter products based on category.
+- [ ] **Search Products by Name**: Users can search for products by name.
+- [ ] **Search Products by Category**: Users can search for products by category.
 
 ### Cart Service
-- **Add product to cart**: `POST /addCart/{productId}`
-- **Get all products in cart**: `GET /getProductsFromCart`
-- **Get cart by ID**: `GET /getCartById/{cartId}`
-- **Delete product from cart**: `DELETE /deleteProductsFromCart/{cartId}`
-- **Clear all products from cart**: `DELETE /deleteAllProductsFromCart`
+- [ ] **Add Product to Cart**: Users can add products to their shopping cart.
+- [ ] **Get All Products in Cart**: Users can view all products currently in their cart.
+- [ ] **Get Cart by ID**: Users can retrieve their cart using its ID.
+- [ ] **Delete Product from Cart**: Users can remove specific products from their cart.
+- [ ] **Clear All Products from Cart**: Users can empty their cart.
 
 ### Inventory Service
-- **Add stock**: `POST /add`
-- **Reduce stock**: `PUT /reduce`
-- **Get all inventory products**: `GET /all`
-- **Get stock by product ID**: `GET /stock/{productId}`
+- [ ] **Add Stock**: Admin can add stock for products.
+- [ ] **Reduce Stock**: Admin can reduce stock when products are sold.
+- [ ] **Get All Inventory Products**: Admin can view all products in inventory.
+- [ ] **Get Stock by Product ID**: Users can check the stock level of a specific product.
 
 ### Order Service
-- **Place an order**: `POST /placeOrder`
-- **Get all orders**: `GET /allOrders`
-- **Get order details by ID**: `GET /getOrderById/{orderId}`
-- **Cancel order**: `DELETE /cancel/{orderId}`
+- [ ] **Place an Order**: Users can place orders for products.
+- [ ] **Get All Orders**: Admin can view all orders placed by users.
+- [ ] **Get Order Details by ID**: Users can retrieve details of a specific order.
+- [ ] **Cancel Order**: Users can cancel their orders.
 
 ## Technologies Used
-- **Spring Boot**: REST APIs, Microservices Architecture
-- **Spring Cloud OpenFeign**: Service-to-Service Communication
-- **MySQL**: Database Management
-- **Swagger UI**: API Documentation
-- **JPA & Hibernate**: ORM for database interaction
-- **Maven**: Dependency Management
-- **JWT Authentication**: Secure Endpoints
+- [ ] **Java**: Core backend development.
+- [ ] **Spring Boot**: Framework for building RESTful APIs.
+- [ ] **MySQL**: Database for storing user and application data.
+- [ ] **JPA (Java Persistence API)**: ORM for interacting with the database.
+- [ ] **Maven**: Dependency and project management.
+- [ ] **Spring Cloud OpenFeign**: Service-to-Service Communication.
+- [ ] **Swagger UI**: API Documentation.
+- [ ] **JWT Authentication**: Secure Endpoints.
 
 ## Setup and Installation
 
@@ -58,9 +52,3 @@ This project is a microservices-based e-commerce application built using Java, S
 - Java 11 or higher
 - Maven
 - MySQL Server
-
-### Steps
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/ecommerce-microservices.git
-   cd ecommerce-microservices
